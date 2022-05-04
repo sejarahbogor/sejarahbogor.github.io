@@ -4,6 +4,6 @@ This website, to be exact, this repo will not be maintained after the project wa
 
 ## Goals
 - [x] Setting up the website
-- [ ] Research on the website
+- [x] Research on the website
 - [ ] Making the website HTML
 - [ ] Doing the CSS stuff
