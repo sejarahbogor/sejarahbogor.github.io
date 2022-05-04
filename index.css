@@ -67,53 +67,72 @@ body, html {
     background-color: #89B5AF;
     color: #DED9C4;
     font-family: "Montserrat";
+    top: 5%;
+    height: 1050px;
     
 }
 
 .pT2 p {
     padding-left: 15px;
-    padding-top: 5px;
     font-size: 25px;
     font-weight: bold;
     position: relative;
-    top: 5%;
+    top: 1%;
+    bottom: 50%;
 
 }
 
 .iframeyt1 {
     left: 0;
-    padding-top: 25%;
-    padding: 40px;
     padding-left: 25%;
 }
 
-button.gallery {
+a.gallery {
     border: #ADC2A9 1px none;
     color: #FEF5ED;
     background-color: #ADC2A9;
     text-decoration: none;
     cursor: pointer;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-family: "Montserrat";
-    font-size: 20px;
+    font-size: 30px;
+    border-radius: 100px;
+    transition: all 0.5s;
 }
 
-button a{
+.gallery {
     text-decoration: none;
     color: #FEF5ED;
 
 }
 
-button.gallery:hover {
-    background-color: #9aad97;
+a.gallery:hover {
+    background-color: #7d8f7b;
     color: #f1e6dd;
     transition: all 0.5s;
 }
 
-button.gallery:after {
+a.gallery:hover:before {
     background-color: #7e8a7d;
     transition: all 0.5s;
 }
+
+a.gallery:after {
+    background-color: #9aad97;
+    color: #f1e6dd;
+    transition: all 0.5s;
+    transition-delay: 0.8s;
+}
+
+a.gallery:active {
+    font-size: 5px;
+}
+
+a.gallery:active:after {
+    width: 1000px;
+    height: 1000px;
+}
+
 
 
