@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    height: 100%;
+}
+
+.parallax1, .parallax2 {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax1 {
+    background-image: url("./images/436896715.jpeg");
+}
+
+.parallax2 {
+    background-image: url("./images/wallpaperflare.com_wallpaper.jpg")
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align:center;
+    color: #000;
+    opacity: 1;
+}
+
+.caption span.border {
+    background-color: #0F0E0E;
+    color: #F2F2F2;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.pT1 {
+    background-color: #C1A3A3;
+    color: #F3C5C5;
+    font-family: Helvetica;
+    height: 100%;
+}
+
+.pT1 p {
+    padding-left: 15px;
+    padding-top: 5px;
+    font-size: 40px;
+    font-weight: bold;
+}
