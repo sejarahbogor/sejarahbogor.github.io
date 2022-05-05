@@ -7,53 +7,87 @@
 }
 
 body {
-    background-color: #EDE3DC;
+    margin: 0;
+    transition: all 800ms;
+    background-color: #765ac4;
 }
 
-div.gallery {
-    border: 1px solid #ccc;
-  }
-  
-  div.gallery:hover {
-    border: 1px solid #777;
-  }
-  
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  div.desc {
-    padding: 15px;
+.sections {
     text-align: center;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+    background-position: center;
+    max-height: 150%;
+}
 
+.sec-img {
+    z-index: -999;
+    position: relative;
+    left: 0;
+    right: 0;
+    -webkit-filter: drop-shadow(1px 1px 0 rgb(255, 255, 255))
+    drop-shadow(-1px -1px 0 white);
+    filter: drop-shadow(1px 1px 0 white) 
+    drop-shadow(-1px -1px 0 white);
+    text-align: center;
+}
+
+.sec-img img {
+    max-width: 400px;
+}
+
+.sec-text1 {
+    transform: translateY(-300px);
+    z-index: 999;
+    background-color: #9772FB;
+    box-shadow: 10px 20px 40px 40px #9772FB;
+}
+
+.sec-text2 {
+    z-index: 9999;
+    background-color: #c2f0d1;
+    box-shadow: 10px 10px 40px 40px #c2f0d1;
+}
+
+.sec-text3 h1 {
+    color: #DAB88B;
+}
+
+.sec-text3 a {
+    text-decoration: none;
+    color: #a8a895;
+    cursor: pointer;
+}
+
+.section3{
+    transform: translateY(500px);
+}
+
+.section3 img {
+    transform: translateY(-200px);
+}
+
+.sec-text3 h1 {
+    transform: translateY(-100px);
+    color: #E8C07D;
+    background-color: #799664;
+    box-shadow: 10px 10px 40px 40px #799664;
+}
+
+.sec-text h1 {
+    background-color: #9772FB;
+    box-shadow: 0px 0px 40px 40px #B6FFCE;
+    color: #d2cae9;
+    font-size: 15px;
+    z-index: 999999;
+}
+
+.color-one {
+    background-color: #765ac4;
+}
+
+.color-two {
+    background-color: #95d8ab;
+}
+
+.color-three {
+    background-color: #9FC088;
+}
