@@ -36,13 +36,14 @@ body, html {
     text-align:center;
     color: #000;
     opacity: 1;
+    padding-top: 5px;
 }
 
 .caption span.border {
     background-color: #E37E5F;
     color: #F2F2F2;
-    padding: 18px;
-    font-size: 80px;
+    padding: 1px;
+    font-size: 50px;
     letter-spacing: 10px;
     font-family: "Montserrat";
 }
@@ -173,32 +174,30 @@ a.gallery:active:after {
     width: 200px;
 }
 
-.copyrightFooter {
+p.copyrightFooter {
     position: relative;
     bottom: 60%;
     left: 10%;
     cursor: pointer;
+    width: 100px;
 }
 
-@media only screen and (max-width: 800px) {
-    .caption span.border {
+@media screen and (max-device-width: 640px) {
+    .caption.span.border {
         background-color: #E37E5F;
         color: #F2F2F2;
-        padding: 18px;
-        font-size: 40px;
+        padding-top: 40px;
+        font-size: 25px;
         letter-spacing: 10px;
         font-family: "Montserrat";
+
+    }
+
+    .border {
+        font-size: 10px;
     }
 
     .roundedImg {
-        object-fit: cover;
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        position: relative;
-        bottom: 5%;
-        box-shadow: 0px 0px 40px 40px #76b6b4;
-        left: 80%;
         display: none;
     }
 
@@ -230,5 +229,9 @@ a.gallery:active:after {
         max-height: 315px;
         position: relative;
         right: 10%;
+    }
+
+    p.copyrightFooter {
+        width: 100px;
     }
 }
