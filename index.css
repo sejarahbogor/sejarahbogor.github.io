@@ -108,10 +108,10 @@ body, html {
     padding-top: 50px;
 }
 
-.iframeyt1 {
-    left: 0;
-    padding-left: 25%;
-}
+.iframeyt1 { position: relative; padding-bottom: 46.25%; top: 10%; height: 0; overflow: hidden; left: 0;
+    padding-left: 10%;}
+
+.iframeyt1 iframe, .video-container object, .iframeyt1 embed { position: absolute; width: 80%; height: 80%; }
 
 
 
@@ -225,8 +225,8 @@ a.gallery:active:after {
     }
 
     .iframeyt1 {
-        max-width: 460px;
-        max-height: 215px;
+        max-width: 560px;
+        max-height: 315px;
         position: relative;
         right: 10%;
     }
