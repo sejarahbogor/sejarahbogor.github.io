@@ -23,4 +23,10 @@ $(document).ready(function(){
             });
         });
     });
+
+
+    
+    $(".instaAcc").on('click', function(event) {
+        window.location.href = "https://www.instagram.com/inumakidoge/"
+    })
   });

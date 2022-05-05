@@ -176,7 +176,8 @@ a.gallery:active:after {
 .copyrightFooter {
     position: relative;
     bottom: 60%;
-    left: 3%;
+    left: 10%;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 800px) {
