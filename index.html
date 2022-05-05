@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="./index.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6606313452040204"
      crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="./index.js"></script>
 
     <title>Home</title>
 </head>
@@ -21,11 +22,12 @@
     <div class="pT1">
         <p>Mau tau sejarah anime?</p>
         <p>Scroll kebawah yuk!</p>
+        <a class="ayoBtn">Ayo!</a>
         <img src="./images/436896715.jpeg" alt="" class="roundedImg">
     </div>
     <div class="parallax2">
     </div>
-    <div class="pT2">
+    <div class="pT2" id="pT2">
         <p>⠀</p>
         <p>Sejarah anime berawal dari <i><a>“Katsudo Shashin”</a></i>. Secara harfiah, “Katsudo Shashin” berarti “Gambar Bergerak”. Anime singkat berdurasi tiga detik ini dibuat tahun 1907, namun strip filmnya baru ditemukan kembali pada tahun 2005. Di dalamnya terdapat rentetan gambar anak laki-laki yang menulis <i class="moving-pic-change">“活動写真”</i>, melepas topi, dan memberi hormat.
         
@@ -61,6 +63,8 @@
         })
         ScrollReveal().reveal('.pT1 p', {delay: 50});
         ScrollReveal().reveal('.pT1 img', {delay: 50});
+        ScrollReveal().reveal('.pT2 *', {delay: 50});
+        ScrollReveal().reveal('.ayoBtn', {delay: 1100});
       </script>
 </body>
 </html>
