@@ -31,11 +31,22 @@ body {
 }
 
 .sec-img img {
-    max-width: 400px;
+    max-width: 100%;
+    max-height: 1000px;
+    height: 550px;
+}
+
+.sec-img_ img{
+    float: left;
+    position: relative;
+    width: 20%;
+    text-align: center;
+    left: 30%;
+    bottom: 50px;
 }
 
 .sec-text1 {
-    transform: translateY(-300px);
+    transform: translateY(0px);
     z-index: 999;
     background-color: #9772FB;
     box-shadow: 10px 20px 40px 40px #9772FB;
@@ -47,8 +58,20 @@ body {
     box-shadow: 10px 10px 40px 40px #c2f0d1;
 }
 
+.section2 {
+    transform: translateY(100px)
+}
+
+
+
 .sec-text3 h1 {
     color: #DAB88B;
+}
+
+.sec-text3 {
+    position: absolute;
+    top: 300px;
+    left: 2%;
 }
 
 .sec-text3 a {
@@ -90,4 +113,11 @@ body {
 
 .color-three {
     background-color: #9FC088;
+}
+
+@media screen and (max-device-width: 640px) {
+    .sec-img_ {
+        width: 1000px;
+        transform: translateX(-300px);
+    }
 }

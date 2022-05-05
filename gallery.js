@@ -6,9 +6,8 @@ var one_ = document.getElementById("one"),
 two_ = document.getElementById("two"),
 three_ = document.getElementById("three");
 
-if(window.scrollY >(one_.offsetHeight + one_.offsetTop)){
+if(window.scrollY >(one_.offsetHeight + one_.offsetTop/3)){
     // do something 
-    alert("One")
 }
 
 $(window).scroll(function() {
