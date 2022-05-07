@@ -1,16 +1,29 @@
-var one = "#765ac4",
-two = "#95d8ab",
-three = "#FDF6EC";
+var one = "#DEA057",
+two = "#CE9461",
+three = "#8D8DAA",
+four = "#3A3845";
+var one_ = "#d9913f",
+two_ = "#c37b3c",
+three_ = "#7b7b94";
+four_ ="#1d1c22";
 
-var one_ = document.getElementById("one"),
-two_ = document.getElementById("two"),
-three_ = document.getElementById("three");
+var scale = chroma.scale([one, two, three, four]).domain([0, $(document).height()]);
+var scale_ = chroma.scale([one_, two_, three_, four_]).domain([0, $(document).height()]);
+
+$(window).on('scroll', function(){
+    $('body').css('background-color', scale(window.pageYOffset));
+    $(".sec_ h1").css('background-color', scale_(window.pageYOffset));
+    $(".sec_ h1").css('box-shadow', '10px 10px 40px 40px'+scale_(window.pageYOffset));
+})
+
 
 if(window.scrollY >(one_.offsetHeight + one_.offsetTop/3)){
     // do something 
 }
 
-$(window).scroll(function() {
+
+
+/*$(window).scroll(function() {
     var $window = $(window),
         $body = $('body'),
         $panel = $('.sec');
@@ -28,5 +41,5 @@ $(window).scroll(function() {
            }
     })
 }).scroll(); 
-
+*/
 // FDF6EC

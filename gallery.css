@@ -9,7 +9,7 @@
 body {
     margin: 0;
     transition: all 800ms;
-    background-color: #765ac4;
+    background-color: #DEA057;
 }
 
 .sections {
@@ -35,7 +35,6 @@ body {
     max-height: 1000px;
     height: 550px;
 }
-
 .sec-img_ img{
     float: left;
     position: relative;
@@ -48,24 +47,14 @@ body {
 .sec-text1 {
     transform: translateY(0px);
     z-index: 999;
-    background-color: #9772FB;
-    box-shadow: 10px 20px 40px 40px #9772FB;
 }
 
 .sec-text2 {
     z-index: 9999;
-    background-color: #c2f0d1;
-    box-shadow: 10px 10px 40px 40px #c2f0d1;
 }
 
 .section2 {
-    transform: translateY(100px)
-}
-
-
-
-.sec-text3 h1 {
-    color: #DAB88B;
+    transform: translateY(500px)
 }
 
 .sec-text3 {
@@ -74,25 +63,24 @@ body {
     left: 2%;
 }
 
-.sec-text3 a {
-    text-decoration: none;
-    color: #a8a895;
-    cursor: pointer;
-}
 
 .section3{
-    transform: translateY(500px);
+    transform: translateY(1200px);
 }
 
 .section3 img {
     transform: translateY(-200px);
+    position: relative; 
+    left: 20%;
 }
 
 .sec-text3 h1 {
     transform: translateY(-100px);
-    color: #E8C07D;
-    background-color: #799664;
-    box-shadow: 10px 10px 40px 40px #799664;
+    color: #ffffff;
+}
+
+.sec-logo1 {
+    padding-left: 200px;
 }
 
 .sec-text h1 {
@@ -102,6 +90,38 @@ body {
     font-size: 15px;
     z-index: 999999;
 }
+
+.section4 {
+    transform: translateY(1900px);
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.video-container {
+    width: 80%; /* you have to have a size or this method doesn't work */
+    height: 600px; /* think about making these max-width instead - might give you some more responsiveness */
+
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 0; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+}
+
+.sec-text4 {
+    width: 560px; /* you have to have a size or this method doesn't work */ /* think about making these max-width instead - might give you some more responsiveness */
+
+    position: absolute; /* positions out of the flow, but according to the nearest parent */
+    top: 550px; right: 0; /* confuse it i guess */
+    bottom: 0; left: 0;
+    margin: auto;
+}
+
 
 .color-one {
     background-color: #765ac4;
@@ -113,6 +133,10 @@ body {
 
 .color-three {
     background-color: #9FC088;
+}
+
+.color-four {
+    background-color: #3A3845;
 }
 
 @media screen and (max-device-width: 640px) {
