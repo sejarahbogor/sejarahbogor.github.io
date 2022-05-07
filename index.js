@@ -51,6 +51,7 @@ $(document).ready(function(){
     })
 
     $("i.ad4").on('click', function(event){
+        console.log(4)
         document.getElementById("pT6").scrollIntoView({
             behavior: "smooth",
             block: "start",
